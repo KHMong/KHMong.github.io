@@ -1,0 +1,178 @@
+main
+{
+    margin: 50px;
+}
+
+.preview-container
+{
+    height: 800px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/GodStyle/main01.jpg');
+    position: relative;
+
+    transition: background-image 0.35s ease;
+}
+
+.trending-container,
+.top-seller-container,
+.shop-by-category-container
+{
+    margin-top: 80px;
+}
+
+.trending-title,
+.top-seller-title,
+.shop-by-category-title
+{
+    font-size: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.trending-items-container,
+.top-seller-items-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.shop-by-category-items-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.product-box
+{
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 100%;
+}
+
+.product-box:hover 
+{
+    border-color: black;
+}
+
+.product-box:hover .product-img
+{
+    transform: scale(1.05);
+}
+
+.product-img-container
+{
+    overflow: hidden;
+}
+
+.product-img
+{
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    transition: transform 0.3s ease;
+}
+
+.product-detail
+{
+    padding: 10px;
+}
+
+.product-name
+{
+    font-size: 18px;
+}
+
+.product-category
+{
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+}
+
+.product-price
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.shop-by-category-item
+{
+    height: 100%;
+}
+
+.shop-by-category-pic-container
+{
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+}
+
+.shop-by-category-pic
+{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.shop-by-category-item-hover-title
+{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    font-size: 90px;
+    background-color: rgb(0, 0, 0, 0.7);
+    text-shadow: 4px 4px rgb(179, 179, 179, 0.4);
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.shop-by-category-pic-container:hover .shop-by-category-item-hover-title
+{
+    opacity: 1;
+}
+
+.shop-by-category-pic-container:hover .shop-by-category-pic
+{
+    transform: scale(1.05);
+}
+
+.shop-by-category-item-title
+{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.add-to-cart-button
+{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: #ffde59;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.15s ease;
+}
+
+.add-to-cart-button:hover
+{
+    background-color: #ffcc00;
+}
+
+.add-to-cart-button:active
+{
+    background-color: #ffa600;
+}

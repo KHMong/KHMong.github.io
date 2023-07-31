@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>GS - Sports Clothing & Equipments | GodStyle</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/GodStyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Header 1 -->
+            <div class="header1">
+                <div class="header1-left-section">
+                    <div class="header1-gs-logo-container">
+                        <a href="GodStyle.html">
+                            <img class="header1-gs-logo" src="images/logos/GS-removed.png" alt="GS Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header1-middle-section">
+                    <input class="search-bar" type="text" placeholder="Search" />
+                    <button class="search-button">
+                        <img class="search-icon" src="images/logos/search-icon.png" />
+                    </button>
+                </div>
+                <div class="header1-right-section">
+                    <div>
+                        <div class="shopping-cart-logo-container" id="cart-icon">
+                            <img class="shopping-cart-logo" src="images/logos/shopping-cart.png" alt="Cart">
+                            <div class="cart-item-count">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart-title">Your Cart</div>
+                    <div class="cart-content">
+                    </div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">RM 0</div>
+                    </div>
+                    <button type="button" class="btn-pay">Pay Now</button>
+                    <i class='bx bx-x' id="close-cart"></i>
+                </div>
+            </div>
+
+            <!-- Header 2 -->
+            <div class="header2">
+                <div class="category-container">
+                    <a href="Men/Men.html" class="category-box">
+                        <div class="category-name">Men</div>
+                        <img class="category-arrow-icon" src="images/logos/arrow-icon.png" alt="Arrow Icon">
+                    </a>
+                    <div class="category-dropdown-menu">
+                        <div class="category-dropdown-container">
+                            <div class="category-type-container">
+                                <div class="category-type">Clothing</div>
+                                <a href="Men/AllMenClothing.html" class="category-item">All Clothing</a>
+                                <a href="Men/MenTShirts.html" class="category-item">T-Shirts</a>
+                                <a href="Men/MenHoodies.html" class="category-item">Hoodies</a>
+                                <a href="Men/MenJackets.html" class="category-item">Jackets</a>
+                                <a href="Men/MenShorts.html" class="category-item">Shorts</a>
+                            </div>
+                            <div class="category-type-container">
+                                <div class="category-type">Shoes</div>
+                                <a href="Men/AllMenShoes.html" class="category-item">All Shoes</a>
+                                <a href="Men/MenRunningShoes.html" class="category-item">Running Shoes</a>
+                                <a href="Men/MenBasketballShoes.html" class="category-item">Basketball Shoes</a>
+                                <a href="Men/MenFootballBoots.html" class="category-item">Football Boots</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container">
+                    <a href="Women/Women.html" class="category-box">
+                        <div class="category-name">Women</div>
+                        <img class="category-arrow-icon" src="images/logos/arrow-icon.png" alt="Arrow Icon">
+                    </a>
+                    <div class="category-dropdown-menu">
+                        <div class="category-dropdown-container">
+                            <div class="category-type-container">
+                                <div class="category-type">Clothing</div>
+                                <a href="Women/AllWomenClothing.html" class="category-item">All Clothing</a>
+                                <a href="Women/WomenTShirts.html" class="category-item">T-Shirts</a>
+                                <a href="Women/WomenHoodies.html" class="category-item">Hoodies</a>
+                                <a href="Women/WomenJackets.html" class="category-item">Jackets</a>
+                                <a href="Women/WomenShorts.html" class="category-item">Shorts</a>
+                            </div>
+                            <div class="category-type-container">
+                                <div class="category-type">Shoes</div>
+                                <a href="Women/AllWomenShoes.html" class="category-item">All Shoes</a>
+                                <a href="Women/WomenRunningShoes.html" class="category-item">Running Shoes</a>
+                                <a href="Women/WomenBasketballShoes.html" class="category-item">Basketball Shoes</a>
+                                <a href="Women/WomenFootballBoots.html" class="category-item">Football Boots</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-container">
+                    <a href="Accessories/Accessories.html" class="category-box">
+                        <div class="category-name">Accessories</div>
+                        <img class="category-arrow-icon" src="images/logos/arrow-icon.png" alt="Arrow Icon">
+                    </a>
+                    <div class="category-dropdown-menu">
+                        <div class="category-dropdown-container category-accessories">
+                            <div class="category-type-container">
+                                <div>
+                                    <div class="category-type category-sports">Sports</div>
+                                </div>
+                                <div class="accessories-sports">
+                                    <div class="accessories-items">
+                                        <a href="Accessories/Badminton.html" class="category-item">Badminton</a>
+                                        <a href="Accessories/Football.html" class="category-item">Football</a>
+                                        <a href="Accessories/Skate.html" class="category-item">Skate</a>
+                                    </div>
+                                    <div class="accessories-items">
+                                        <a href="Accessories/Squash.html" class="category-item">Squash</a>
+                                        <a href="Accessories/TableTennis.html" class="category-item">Table Tennis</a>
+                                        <a href="Accessories/Tennis.html" class="category-item">Tennis</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Main preview -->
+            <a class="preview-link" href="Accessories/Football.html">
+                <div class="preview-container"></div>
+            </a>
+
+            <!-- TRENDING-->
+            <div class="trending-container">
+                <div class="trending-title">TRENDING</div>
+                <div class="trending-items-container">
+                </div>
+            </div>
+
+            <!-- TOP-SELLER -->
+            <div class="top-seller-container">
+                <div class="top-seller-title">TOP-SELLER</div>
+                <div class="top-seller-items-container">
+                </div>
+            </div>
+
+            <!-- SHOP BY CATEGORY -->
+            <div class="shop-by-category-container">
+                <div class="shop-by-category-title">SHOP BY CATEGORY</div>
+                <div class="shop-by-category-items-container">
+                    <div class="shop-by-category-item">
+                        <a href="Men/Men.html">
+                            <div class="shop-by-category-pic-container">
+                                <div class="shop-by-category-item-hover-title">Men</div>
+                                <img class="shop-by-category-pic" src="images/GodStyle/shop-by-category-01.jpg">
+                            </div>
+                        </a>
+                        <div class="shop-by-category-item-title">Men</div>
+                    </div>
+                    <div class="shop-by-category-item">
+                        <div class="shop-by-category-pic-container">
+                            <a href="Women/Women.html">
+                                <div class="shop-by-category-item-hover-title">Women</div>
+                                <img class="shop-by-category-pic" src="images/GodStyle/shop-by-category-02.jpg">
+                            </a>
+                        </div>
+                        <div class="shop-by-category-item-title">Women</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <!-- Footer 1 -->
+            <div class="footer1">
+                <div class="footer1-container">
+                    <div class="footer1-title">Information</div>
+                    <a href="AboutUs.html" class="footer1-info">About Us</a>
+                    <a href="FAQ.html" class="footer1-info">FAQ</a>
+                    <a href="FindAStore.html" class="footer1-info">Find a Store</a>
+                </div>
+                <div class="footer1-container">
+                    <div class="footer1-title">Follow Us</div>
+                    <a href="https://www.facebook.com/profile.php?id=100004597834752" target="_blank">
+                        <div class="footer1-info">Facebook</div>
+                    </a>
+                    <a href="https://www.instagram.com/kelhengmong/?next=%2F" target="_blank">
+                        <div class="footer1-info">Instagram</div>
+                    </a>
+                    <a href="https://www.youtube.com/@kelhengmong9201/featured" target="_blank">
+                        <div class="footer1-info">YouTube</div>
+                    </a>
+                </div>
+                <div class="footer1-container">
+                    <div class="footer1-title">Sign Up</div>
+                    <div class="sign-up-container">
+                        <input class="sign-up-email" type="email" placeholder="Email address">
+                        <button class="sign-up-button">Sign Up</button>
+                    </div>
+                    <div class="sign-up-info">Sign up to be a GS member <br> and get a 15% off for your first purchase!</div>
+                </div>
+            </div>
+
+            <!-- Footer 2 -->
+            <div class="footer2">
+                <div class="copyright-text">Copyright &#169; 2023 GS | Designed by Mong Kel Heng</div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="scripts/Men.js"></script>
+        <script type="text/javascript" src="scripts/GodStyle.js"></script>
+        <script type="text/javascript" src="scripts/TrendingTopSeller.js"></script>
+        <script type="text/javascript" src="scripts/Cart.js"></script>
+    </body>
+</html>

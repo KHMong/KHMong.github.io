@@ -1,0 +1,163 @@
+main
+{
+    margin: 50px 150px;
+}
+
+.faq-top-image-container
+{
+    position: relative;
+    height: 530px;
+}
+
+.faq-title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 100;
+
+    border: 10px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px black;
+    padding: 20px 60px;
+}
+
+.faq-top-image
+{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.question-support-title
+{
+    margin-bottom: 30px;
+}
+
+.got-question-title
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+.here-to-support-title
+{
+    color: #746F72;
+    font-size: 25px;
+    text-align: center;
+}
+
+.all-questions-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.question-container
+{
+    background-color: white;
+    transition: background-color 0.15s ease;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    position: relative;
+}
+
+.question-container:nth-child(1)
+{
+    border-top: 1px solid rgb(218, 218, 218);
+}
+
+.question-title-container
+{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.question-container:hover .question-title-container,
+.question-container.active .question-title-container 
+{
+    background-color: #006f62;
+}
+
+.question-container:hover .question-title-container .question-title,
+.question-container.active .question-title-container .question-title 
+{
+    color: white;
+}
+
+.question-container:hover .question-title-container .question-arrow-icon,
+.question-container.active .question-title-container .question-arrow-icon 
+{
+    filter: brightness(100%) saturate(0);
+    transition: filter 0.15s ease;
+}
+
+.question-container.active .question-title-container .question-arrow-icon
+{
+    transform: rotate(180deg) translate(0, 2px);
+    transition: transform 0.15s ease;
+}
+
+.question-title
+{
+    color: black;
+    font-size: 20px;
+    transition: color 0.15s ease;
+}
+
+.question-arrow-icon
+{
+    height: 20px;
+    object-fit: cover;
+    vertical-align: middle;
+    filter: brightness(0) saturate(100%);
+    transition: filter 0.15s ease;
+}
+
+.question-dropdown-menu
+{
+    padding: 0 18px;
+    background-color: rgb(230, 230, 230);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.question-answer-container
+{
+    display: flex;
+    padding: 20px 10px;
+}
+
+.question-answer
+{
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.3s;
+    transition-delay: 0.05s;
+    transform: translate(0, -2px);
+    line-height: 1.8;
+}
+
+.question-container.active .question-dropdown-menu .question-answer-container .question-answer
+{
+    opacity: 1;
+    transform: translate(0, 2px);
+}
+
+.click-here
+{
+    font-weight: bold;
+    text-decoration: none;
+}

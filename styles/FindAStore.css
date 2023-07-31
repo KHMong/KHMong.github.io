@@ -1,0 +1,162 @@
+main
+{
+    margin: 50px 150px;
+}
+
+.find-a-store-top-image-container
+{
+    position: relative;
+    height: 530px;
+}
+
+.find-a-store-title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 100;
+
+    border: 10px solid white;
+    border-radius: 8px;
+    color: white;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px black;
+    padding: 20px 60px;
+}
+
+.find-a-store-top-image
+{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.find-a-gs-store-title
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+.all-store-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.store-container
+{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 100%;
+    min-height: 400px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.store-image-container
+{
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    height: 230px;
+}
+
+.store-image
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+}
+
+.store-detail-info
+{
+    border-collapse: collapse;
+}
+
+.store-location
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 8px 15px;
+}
+
+.store-detail-info tr:nth-child(2) td
+{
+    padding-top: 15px;
+}
+
+.store-detail-info td:nth-child(1)
+{
+    padding-left: 20px;
+}
+
+.store-detail-info td:nth-child(2)
+{
+    padding-right: 20px;
+}
+
+.store-detail-info td
+{
+    vertical-align: top;
+    padding-bottom: 10px;
+}
+
+.store-detail-title
+{
+    width: 45%;
+    font-size: 15px;
+    text-align: left;
+}
+
+.store-detail-content
+{
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+
+.store-find-us-button-container
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    position: absolute;
+    bottom: 20px;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.store-find-us-button
+{
+    border-radius: 0;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 24px;
+    transition: background-color 0.15s ease;
+}
+
+.store-find-us-button:hover
+{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.store-find-us-button:active
+{
+    background-color: rgba(0, 0, 0, 0.5);
+}

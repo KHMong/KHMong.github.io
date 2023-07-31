@@ -1,0 +1,138 @@
+main
+{
+    margin: 50px 150px;
+}
+
+.navigation-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 179, 179);
+    padding: 30px;
+    color: rgb(50, 50, 50);
+}
+
+.navigation a
+{
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.navigation a:hover
+{
+    color: #006f62;
+}
+
+.shoes-title,
+.running-shoes-title,
+.basketball-shoes-title,
+.football-boots-title,
+.clothing-title,
+.tshirts-title,
+.hoodies-title,
+.jackets-title,
+.shorts-title,
+.women-title
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.shoes-container,
+.running-shoes-container,
+.basketball-shoes-container,
+.football-boots-container,
+.clothing-container,
+.tshirts-container,
+.hoodies-container,
+.jackets-container,
+.shorts-container,
+.women-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+
+.product-box
+{
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 100%;
+}
+
+.product-box:hover 
+{
+    border-color: black;
+}
+
+.product-box:hover .product-img
+{
+    transform: scale(1.05);
+}
+
+.product-img-container
+{
+    overflow: hidden;
+}
+
+.product-img
+{
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+    transition: transform 0.3s ease;
+}
+
+.product-detail
+{
+    padding: 10px;
+    height: 100px;
+}
+
+.product-name
+{
+    font-size: 18px;
+}
+
+.product-category
+{
+    color: rgb(120, 120, 120);
+    font-size: 15px;
+}
+
+.product-price
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-to-cart-button
+{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: #ffde59;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.15s ease;
+}
+
+.add-to-cart-button:hover
+{
+    background-color: #ffcc00;
+}
+
+.add-to-cart-button:active
+{
+    background-color: #ffa600;
+}
